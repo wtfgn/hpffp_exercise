@@ -1,0 +1,17 @@
+-- 3. Given what we know about numeric types and the type signature
+-- of length, look at these two expressions. One works and one
+-- returns an error. Determine which will return an error and why.
+-- (n.b., If you’re checking the type signature of length in GHC
+-- 7.10, you will find Foldable t => t a representing [a], as with
+-- concat in the previous chapter. Again, consider Foldable t to
+-- represent a list here, even though list is only one of the possible
+-- types. We will explain it in detail later.)
+-- Prelude> 6 / 3
+-- -- and
+-- Prelude> 6 / length [1, 2, 3]
+
+-- Solution:
+-- Prelude> 6 / 3 -- Works
+-- Prelude> 6 / length [1, 2, 3] -- Error, 
+-- because length returns an Int, not a Fractional
+-- while (/) requires Fractional arguments.

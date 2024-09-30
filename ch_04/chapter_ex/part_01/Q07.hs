@@ -1,0 +1,15 @@
+-- 7. Below are some bits of code. Which will work? Why or why not?
+-- If they will work, what value would these reduce to?
+-- Prelude> length allAwesome == 2
+-- Prelude> length [1, 'a', 3, 'b']
+-- Prelude> length allAwesome + length awesome
+-- Prelude> (8 == 8) && ('b' < 'a')
+-- Prelude> (8 == 8) && 9
+
+-- Solution:
+-- Prelude> length allAwesome == 2 -- True
+-- Prelude> length [1, 'a', 3, 'b'] -- Error,
+-- because the list contains different types.
+-- Prelude> length allAwesome + length awesome -- 5
+-- Prelude> (8 == 8) && ('b' < 'a') -- False
+-- Prelude> (8 == 8) && 9 -- Error, because 9 is not a Bool.
