@@ -1,0 +1,7 @@
+-- 1. You will be shown a type declaration, and you should categorize
+-- each type. The choices are a fully polymorphic type variable,
+-- constrained polymorphic type variable, or concrete type constructor.
+-- f :: Num a => a -> b -> Int -> Int
+-- --             [0]   [1]    [2]     [3]
+-- Here, the answer would be: constrained polymorphic (Num)
+-- ([0]), fully polymorphic ([1]), and concrete ([2] and [3]).
